@@ -7,7 +7,10 @@ URLとタイムアウトの指定すると、タイムアウトで指定した�
 # 使い方
 
 XcodeのFileからAdd　Packages...にてSSHを入力して下さい。
+
+```
 git@github.com:yuujioka/ImageDownloader.git
+```
 
 その後importして下さい。
 
