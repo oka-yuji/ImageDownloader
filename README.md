@@ -21,8 +21,8 @@ import ImageDownloader
 後は以下のように使用する事ができます。
 
 ```swift
-downloadImage(url: URL(string: "取得したいImageのURL")!, timeOut: 3.0) { image in
-   self.image = image
+downloadImage(url: URL(string: "取得したいImageのURL")!, timeOut: 3.0) { fetchImage in
+   self.image = fetchImage
 ```
 
 imeOut: 3.0 = 3.0秒です。
