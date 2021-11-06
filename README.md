@@ -1,3 +1,5 @@
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/yuujioka/ImageDownloader)
+[![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Foka_yuuji)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fyuujioka%2FImageDownloader)
 # ImageDownloader
 
 URLとタイムアウトの指定すると、タイムアウトで指定した時間内にImageを取得する事ができればImageを表示するSwift Package Managerです。
