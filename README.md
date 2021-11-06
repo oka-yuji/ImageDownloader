@@ -1,0 +1,2 @@
+# ImageDownloader
+URLとタイムアウトを指定するだけでUIImageを取得するSwift Package Managerです。
