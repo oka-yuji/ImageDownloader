@@ -6,7 +6,7 @@ URLとタイムアウトの指定すると、タイムアウトで指定した�
 
 # 使い方
 
-XcodeのFileからAdd　Packages...にてSSHを入力して下さい。
+XcodeのFileからAdd Packages...にてSSHを入力して下さい。
 
 ```
 git@github.com:yuujioka/ImageDownloader.git
@@ -25,5 +25,5 @@ downloadImage(url: URL(string: "取得したいImageのURL")!, timeOut: 3.0) { f
    self.image = fetchImage
 ```
 
-imeOut: 3.0 = 3.0秒です。
+timeOut: 3.0 = 3.0秒です。
 お好きな時間に設定して下さい。
