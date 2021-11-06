@@ -21,21 +21,8 @@ import ImageDownloader
 後は以下のように使用する事ができます。
 
 ```swift
-@State var image: UIImage?
-var body: some View {
-    VStack {
-        if let downloadImage = image {
-            Image(uiImage: downloadImage)
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-        }
-    }
-    .onAppear {
-        downloadImage(url: URL(string: "取得したいImageのURL")!, timeOut: 3.0) { image in
-            self.image = image
-        }
-    }
-}
+downloadImage(url: URL(string: "取得したいImageのURL")!, timeOut: 3.0) { image in
+   self.image = image
 ```
 
 imeOut: 3.0 = 3.0秒です。
