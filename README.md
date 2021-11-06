@@ -18,7 +18,7 @@ git@github.com:yuujioka/ImageDownloader.git
 import ImageDownloader
 ```
 
-後は以下のように使用する事ができます。
+Imageの取得
 
 ```swift
 downloadImage(url: URL(string: "取得したいImageのURL")!, timeOut: 3.0) { fetchImage in
@@ -27,3 +27,27 @@ downloadImage(url: URL(string: "取得したいImageのURL")!, timeOut: 3.0) { f
 
 timeOut: 3.0 = 3.0秒です。
 お好きな時間に設定して下さい。
+
+使用例
+
+```swift
+let url = URL(string: "https://images.unsplash.com/photo-1635326332448-1cb32649925d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=729&q=80")
+@State var image: UIImage?
+
+var body: some View {
+    VStack {
+        Text("取得したImage")
+        if let downloadImage = image {
+            Image(uiImage: downloadImage)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+        }
+    }
+    .onAppear {
+        downloadImage(url: url!, timeOut: 5) { fetchImage in
+            self.image = fetchImage
+        }
+    }
+}
+
+```
